@@ -1,5 +1,5 @@
 
-const buildFibonacciSerie = maxItems => {
+const buildFibonacciSequence = maxItems => {
     const array = Array.from(Array(maxItems).keys())
     
     let actual = 1
@@ -19,4 +19,4 @@ const buildFibonacciSerie = maxItems => {
 
 }
 
-module.exports = buildFibonacciSerie 
+module.exports = buildFibonacciSequence 
