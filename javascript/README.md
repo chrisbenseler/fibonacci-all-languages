@@ -1,6 +1,6 @@
 # Javascript
 
-## [Iterando um array](./iterate_array) 
+## [Iterando um array](./iterate_array.js) 
 
 
 
