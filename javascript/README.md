@@ -1,6 +1,7 @@
 # Javascript
 
 ## [Iterando um array](./iterate_array.js) 
+## [Recursivo](./recursive.js) 
 
 ### Rodando todos exemplos
 ```
