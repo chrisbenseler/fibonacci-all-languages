@@ -11,13 +11,14 @@ describe("Fibonnaci sequence", () => {
 
   test("Recursive", () => {
     const sequence = recursive(15);
+    console.log(sequence)
     expect(sequence.length).toBe(15);
+    
     expect(sequence).toStrictEqual(fibonacciSequence);
   });
 
   test("While", () => {
     const sequence = whileLoop(15);
-    console.log(sequence)
     expect(sequence.length).toBe(15);
     expect(sequence).toStrictEqual(fibonacciSequence);
   });
