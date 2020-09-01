@@ -2,6 +2,7 @@
 
 ## [Iterando um array](./iterate_array.js) 
 ## [Recursivo](./recursive.js) 
+## [While Loop](./while.js) 
 
 ### Rodando todos exemplos
 ```
