@@ -3,3 +3,4 @@ Repositório com snippets de código que fazem a geração dos 15 primeiros elem
 
 - [Javascript](./javascript/README.md)
 - [Python](./python/README.md)
+- [Go](./golang/README.md)
