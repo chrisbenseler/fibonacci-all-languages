@@ -7,11 +7,9 @@ const buildFibonacciSequence = (maxItems) => {
     }
 
     if (index === 0) {
-      sequence = [1];
-    } else if (index === 1) {
-      sequence = [1, 1];
+      sequence = [0];
     } else {
-      const sum = sequence[index - 1] + sequence[index - 2];
+      const sum = sequence[index - 1] + sequence[index - 2] || 1;
       sequence = [...sequence, sum];
     }
     return fn(nextIndex, maxIndex, sequence);

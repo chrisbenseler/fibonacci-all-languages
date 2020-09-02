@@ -1,11 +1,12 @@
 def buildFibonacciSequence(items):
-    actual = 1
+    actual = 0
     previous = None
     sequence = []
     for index in range(items):
         if(previous == None):
-            previous = 0
-            sequence.append(1)
+            previous = 1
+            actual = 0
+            sequence.append(0)
             continue
         
         

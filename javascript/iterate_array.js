@@ -1,12 +1,13 @@
 const buildFibonacciSequence = (maxItems) => {
   const array = Array.from(Array(maxItems).keys());
 
-  let actual = 1;
+  let actual = 0;
   let previous = null;
   return array.map((_) => {
     if (previous === null) {
-      previous = 0;
-      return 1;
+      previous = 1;
+      actual = 0
+      return 0;
     }
 
     const sum = actual + previous;
