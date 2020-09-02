@@ -16,9 +16,9 @@ func IterateArray(maxItems int) []int {
 	for i := 1; i <= maxItems; i++ {
 
 		if previous == -1 {
-			sequence = append(sequence, 1)
-			previous = 0
-			actual = 1
+			sequence = append(sequence, 0)
+			previous = 1
+			actual = 0
 			continue
 		}
 		sum := actual + previous

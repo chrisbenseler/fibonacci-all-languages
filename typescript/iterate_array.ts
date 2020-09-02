@@ -1,12 +1,12 @@
-const buildFibonacciSequence = (maxItems) => {
+export function buildFibonacciSequence(maxItems: number) {
   const array = Array.from(Array(maxItems).keys());
 
-  let actual = 0;
-  let previous = null;
+  let actual = 1;
+  let previous: number;
   return array.map((_) => {
-    if (previous === null) {
+    if (previous === undefined) {
       previous = 1;
-      actual = 0
+      actual = 0;
       return 0;
     }
 
@@ -16,5 +16,3 @@ const buildFibonacciSequence = (maxItems) => {
     return sum;
   });
 };
-
-module.exports = buildFibonacciSequence;

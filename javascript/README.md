@@ -1,6 +1,7 @@
 # Javascript
 
 ## [Iterando um array](./iterate_array.js) 
+## [Reduce](./reduce.js) 
 ## [Recursivo](./recursive.js) 
 ## [While Loop](./while.js) 
 

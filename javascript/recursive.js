@@ -1,20 +1,18 @@
 const buildFibonacciSequence = (maxItems) => {
-  const fn = (index, maxIndex, serie) => {
-    if (index === 0) {
-      return fn(1, maxIndex, [1]);
-    }
-    if (index === 1) {
-      index = index + 1;
-      return fn(2, maxIndex, [1, 1]);
-    }
-    if (index < maxIndex) {
-      const sum = serie[index - 1] + serie[index - 2];
-      index = index + 1;
+  const fn = (index, maxIndex, sequence) => {
+    const nextIndex = index + 1;
 
-      serie = [...serie, sum];
-      return fn(index, maxIndex, serie);
+    if (nextIndex > maxIndex) {
+      return sequence;
     }
-    return serie;
+
+    if (index === 0) {
+      sequence = [0];
+    } else {
+      const sum = sequence[index - 1] + sequence[index - 2] || 1;
+      sequence = [...sequence, sum];
+    }
+    return fn(nextIndex, maxIndex, sequence);
   };
 
   return fn(0, maxItems, []);
