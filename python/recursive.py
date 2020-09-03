@@ -1,6 +1,5 @@
 def buildFibonacciSequence(maxItems):
     
-   
     def fn(index, maxIndex, sequence):
         nextIndex = index + 1
 

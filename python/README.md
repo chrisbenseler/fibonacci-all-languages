@@ -4,6 +4,8 @@
 
 ## [Recursivo](./recursive.py)
 
+## [While Loop](./whileLoop.py)
+
 ### Rodando todos exemplos
 
 ```python
