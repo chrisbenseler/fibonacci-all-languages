@@ -1,5 +1,6 @@
 import iterate_array
 import recursive
+import whileLoop
 
 fibonacciSequence = [0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377]
 
@@ -13,6 +14,10 @@ class TestFibonacciMethods(unittest.TestCase):
 
     def test_recursive(self):
         serie = recursive.buildFibonacciSequence(15)
+        self.assertEqual(serie, fibonacciSequence)
+
+    def test_rwhile(self):
+        serie = whileLoop.buildFibonacciSequence(15)
         self.assertEqual(serie, fibonacciSequence)
 
 
