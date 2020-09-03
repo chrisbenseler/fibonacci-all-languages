@@ -1,11 +1,12 @@
 # fibonacci-all-languages
 
-Repositório com snippets de código que fazem a geração dos 15 primeiros elementos da Sequenca de Fibonacci em diversas linguagens 
+Repositório com snippets de código que fazem a geração dos 15 primeiros elementos da Sequenca de Fibonacci em diversas linguagens
 
-- [Javascript](./javascript/README.md)
-- [Typescript](./typescript/README.md)
-- [Python](./python/README.md)
 - [Go](./golang/README.md)
+- [Javascript](./javascript/README.md)
+- [Python 2](./python2/README.md)
+- [Python 3](./python3/README.md)
+- [Typescript](./typescript/README.md)
 
 ## O que é a Sequencia de Fibonacci
 
