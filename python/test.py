@@ -1,25 +1,23 @@
-import iterate_array
-import recursive
-import whileLoop
+from main import modules
 
 fibonacciSequence = [0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377]
 
 import unittest
 
-class TestFibonacciMethods(unittest.TestCase):
+def create_test(module, description):
+    error_format = "\nExpected:  %s\nGot:       %s"
+    def test_module():
+        value = module.buildFibonacciSequence(15)
+        if value != fibonacciSequence:
+            raise AssertionError(error_format % (fibonacciSequence, value))
+    test_module.__name__ = 'test_'+module.__name__
+    return unittest.FunctionTestCase(test_module, description=description)
 
-    def test_iterate_array(self):
-        serie = iterate_array.buildFibonacciSequence(15)
-        self.assertEqual(serie, fibonacciSequence)
+tests = unittest.TestSuite()
 
-    def test_recursive(self):
-        serie = recursive.buildFibonacciSequence(15)
-        self.assertEqual(serie, fibonacciSequence)
-
-    def test_rwhile(self):
-        serie = whileLoop.buildFibonacciSequence(15)
-        self.assertEqual(serie, fibonacciSequence)
-
+for description, module in modules.iteritems():
+    tests.addTest(create_test(module, description))
 
 if __name__ == '__main__':
-    unittest.main()
+    runner = unittest.TextTestRunner()
+    runner.run(tests)
