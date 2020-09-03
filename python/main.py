@@ -4,6 +4,7 @@ import recursive
 import recursive2
 import recursive3
 import whileLoop
+import generator
 
 modules = {
     'Iterate array': iterate_array,
@@ -12,6 +13,7 @@ modules = {
     'Recursive (simpler)': recursive2,
     'Recursive with memory cache': recursive3,
     'While Loop': whileLoop,
+    'Generator': generator,
 }
 
 if __name__ == '__main__':
