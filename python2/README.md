@@ -1,11 +1,11 @@
 # Python
 
-## [Iterando um array]
+## Iterando um array
 
-- [1](./iterate_array.py)
+- [1](./iterate_array1.py)
 - [2](./iterate_array2.py)
 
-## [Recursivo]
+## Recursivo
 
 - [1](./recursive.py)
 - [2](./recursive2.py)
