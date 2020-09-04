@@ -4,6 +4,7 @@ Repositório com snippets de código que fazem a geração dos 15 primeiros elem
 
 - [Go](./golang/README.md)
 - [Javascript](./javascript/README.md)
+- [PHP](./php/README.md)
 - [Python 2](./python2/README.md)
 - [Python 3](./python3/README.md)
 - [Typescript](./typescript/README.md)
