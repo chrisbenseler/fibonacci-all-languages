@@ -1,10 +1,10 @@
 # PHP
 
-## [Iterando um array]
+## Iterando um array
 
 - [1](./iterate_array1.py)
 
-## [Recursivo]
+## Recursivo
 
 - [1](./recursive1.py)
 
